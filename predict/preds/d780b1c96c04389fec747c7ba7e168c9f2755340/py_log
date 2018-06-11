@@ -1,0 +1,19 @@
+Command: start /B "" C:\Python27\python.exe C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict\predict.py --cd=C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict\ --alarm --redirect=C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict\predict/preds/d780b1c96c04389fec747c7ba7e168c9f2755340/py_log -vv --latdelta=3 --londelta=3 -p1 -f5 -t 1525816251 --lat=48 --lon=-123 d780b1c96c04389fec747c7ba7e168c9f2755340 2>&1
+Output: ERROR: Uncaught exception
+Traceback (most recent call last):
+  File "C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict\predict.py", line 711, in <module>
+    main()
+  File "C:\Python27\lib\site-packages\statsd.py", line 144, in f
+    return func(*args, **kw)
+  File "C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict\predict.py", line 201, in main
+    os.mkdir(uuid_path, 0770)
+WindowsError: [Error 3] The system cannot find the path specified: './predict/preds//d780b1c96c04389fec747c7ba7e168c9f2755340/'
+Traceback (most recent call last):
+  File "C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict\predict.py", line 711, in <module>
+    main()
+  File "C:\Python27\lib\site-packages\statsd.py", line 144, in f
+    return func(*args, **kw)
+  File "C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict\predict.py", line 201, in main
+    os.mkdir(uuid_path, 0770)
+WindowsError: [Error 3] The system cannot find the path specified: './predict/preds//d780b1c96c04389fec747c7ba7e168c9f2755340/'
+

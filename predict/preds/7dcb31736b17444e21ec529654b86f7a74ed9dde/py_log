@@ -1,0 +1,52 @@
+Command: start /B "" C:\Python27\python.exe C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict.py --cd=C:\Ampps\www\AIFCOMSSwithCUPredictorTest\ --alarm --redirect=C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict/preds/7dcb31736b17444e21ec529654b86f7a74ed9dde/py_log -vv --latdelta=3 --londelta=3 -p1 -f5 -t 1525287201 --lat=48 --lon=-123 7dcb31736b17444e21ec529654b86f7a74ed9dde 2>&1
+Output: DEBUG: Using cache directory: /tmp/pydap-cache/
+INFO: Looking for latest dataset which covers Wed May  2 18:53:21 2018
+INFO: Picked IP: 140.90.101.62
+start dataset_for_time at time = 2018-05-02 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_00z
+..................... 2018-05-01 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_00z
+..................... 2018-04-30 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_00z
+..................... 2018-04-29 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_00z
+..................... 2018-04-28 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_00z
+..................... 2018-04-27 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_00z
+..................... 2018-04-26 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_00z
+..................... 2018-04-25 18:53:21
+..................... 18 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_18z
+..................... 12 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_12z
+..................... 6 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_06z
+..................... 0 http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_00z
+..................... 2018-04-24 18:53:21
+possible_urls returns:  ['http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_00z']
+the dataset_for_time url_list =  ['http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180501/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180430/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180429/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180428/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180427/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_12z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180426/gfs_1p00_00z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_18z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_12z', 'http:DEBUG: Trying dataset at http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_18z.
+ERROR: Could not locate a dataset for the requested time.
+DEBUG: Exit: SystemExit(1,)
+//nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_06z', 'http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180425/gfs_1p00_00z']
+Trying dataset at :  http://nomads.ncep.noaa.gov:9090/dods/gfs_1p00/gfs20180502/gfs_1p00_18z
+

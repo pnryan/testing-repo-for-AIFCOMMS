@@ -1,0 +1,1 @@
+Command: start /B "" C:\Python27\python.exe C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict.py --cd=C:\Ampps\www\AIFCOMSSwithCUPredictorTest\ --alarm --redirect=C:\Ampps\www\AIFCOMSSwithCUPredictorTest\predict/preds/00c382cba43ca565bc8e736a050ec5b4cfe61e54/py_log -vv --latdelta=3 --londelta=3 -p1 -f5 -t 1525286445 --lat=48 --lon=-123 00c382cba43ca565bc8e736a050ec5b4cfe61e54 2>&1
