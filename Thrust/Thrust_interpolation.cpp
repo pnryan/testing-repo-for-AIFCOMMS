@@ -17,11 +17,14 @@ float get_CT(float &J)
     // OR
     //return ( (-a/0.7)*J + a );
     // OR
+    
+/*
     if (J>=0 && J<=0.7)
     return ( (-0.0881/0.7)*J + 0.0881 );
     else
     return 0;
-
+*/
+return 0.25*(1+copysign(1.0, J))*(1-copysign(1.0, (J-0.7))*( (-0.0881/0.7)*J + 0.0881 );
 }
    
 // This function would give the thrust due to one propeller in action 
