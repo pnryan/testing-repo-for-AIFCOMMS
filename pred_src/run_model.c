@@ -26,6 +26,20 @@ extern int verbosity;
 
 #define RADIUS_OF_EARTH 6371009.f
 
+/*Beginning of code specific to ALTAIR**********************************************************/
+// struct containing info on ALTAIR's state
+//for use in thrust  calculations etc.
+typedef struct ALTAIR_state ALTAIR_state;
+struct ALTAIR_state
+{
+	float RPM;
+	float f_vel;		//f_vel here refers to foreward velocity of the payload
+	float diameter;
+	float pitch;
+};
+
+/*End of code specific to ALTAIR****************************************************************/
+
 typedef struct model_state_s model_state_t;
 struct model_state_s
 {
@@ -100,45 +114,6 @@ _advance_one_timestep(wind_file_cache_t* cache,
         //u_samp = wind_u;
         //v_samp = wind_v;
 
-		/*
-		begin preliminary code modification to work with thrust values
-		*****************************************************************
-		somewhere in this spot we can assign (for now) an arbitrary drag value.
-		
-		given this and our thrust calculations we can modify u_samp and v_samp according 
-		to the amount of thrust, 
-		
-		however we need to have a direction for this thrust in order for this to work. 
-		
-		We may be able to simply assign an arbitrary direction for now. ie: thrust could be considered
-		to be entirely in the positive u direction for the time being.
-		****************************************************************
-		*/
-		
-		float drag = 50;
-		float prop_diam = 0.3556; //m 
-		float prop_pitch = 0.11938; //m
-		float rpm = 10000 //this will need to be more thoughtfully taken care of soon
-		
-		//we need to determine the "forward velocity" ie: the velocity in the direction of the thrust
-		//in order to determine the thrust output. 
-		
-		//right now our velocity is exactly that of the wind, written as a vector V=<wind_u,wind_v,acsent_rate>
-		//this has magnitude V \dot O  where O is the direction in which the propellers are oriented in the "forward"
-		//direction
-		
-		//for now we will define O as being only in the positive u direction, this can be made dynamic and more 
-		//clever at a later time. 
-		
-		float forward_velocity = u_samp;
-		
-		float thrust = get_thrust(&state->alt, forward_velocity,rpm, prop_diam, prop_pitch, 
-		
-		
-		/*
-		END of added code **********************************************************
-		*/
-		
         state->lat += v_samp * delta_t / ddlat;
         state->lng += u_samp * delta_t / ddlng;
 
