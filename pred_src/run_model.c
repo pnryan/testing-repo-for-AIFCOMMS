@@ -26,10 +26,10 @@ extern int verbosity;
 
 #define RADIUS_OF_EARTH 6371009.f
 
-/*Beginning of code specific to ALTAIR**********************************************************/
+/*Beginning of code for ALTAIR_state**********************************************************/
 // struct containing info on ALTAIR's state
 //for use in thrust  calculations etc.
-typedef struct ALTAIR_state ALTAIR_state;
+typedef struct ALTAIR_state ALTAIR_state;		//needs work, this was made just to provide variable names
 struct ALTAIR_state
 {
 	float RPM;
@@ -38,7 +38,7 @@ struct ALTAIR_state
 	float pitch;
 };
 
-/*End of code specific to ALTAIR****************************************************************/
+/*End of code for ALTAIR_state****************************************************************/
 
 typedef struct model_state_s model_state_t;
 struct model_state_s

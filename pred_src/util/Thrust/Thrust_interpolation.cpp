@@ -7,7 +7,7 @@
 #include <assert.h>
 
 #include "altitude.h"
-#include "rum_model.h"
+#include "run_model.h"
 
 //Computes value for J=v/nd 'dimensionless velocity'
 //Figured it was better than computing it in both functions
