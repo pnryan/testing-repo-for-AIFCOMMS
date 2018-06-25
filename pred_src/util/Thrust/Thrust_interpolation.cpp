@@ -23,6 +23,8 @@ float get_J(ALTAIR_state* curr_state)
 	return J;
 }
 
+
+
 /* Herein get_CT, given that it is a very approximate analysis we are doing, I came up with a simple linear expression for C_t.
 From the plot it was evident that C_t tends to be more and more linear as we....
 move towards a smaller pitch/diameter ratio.

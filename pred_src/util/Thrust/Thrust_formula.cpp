@@ -25,7 +25,6 @@ float get_rpm(float &rpm , float &alt)
 
 }
 
-
 float get_thrust(float alt, ALTAIR_state* curr_state ,float rho /* take from get_density */ )
 {
 	float Thrust_prop,a;

@@ -24,6 +24,7 @@
 
 extern int verbosity;
 
+
 #define RADIUS_OF_EARTH 6371009.f
 
 /*Beginning of code for ALTAIR_state**********************************************************/
