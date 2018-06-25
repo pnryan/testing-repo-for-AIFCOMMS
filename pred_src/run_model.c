@@ -30,7 +30,22 @@
 
 extern int verbosity;
 
+
 #define RADIUS_OF_EARTH 6371009.f
+
+/*Beginning of code for ALTAIR_state**********************************************************/
+// struct containing info on ALTAIR's state
+//for use in thrust  calculations etc.
+typedef struct ALTAIR_state ALTAIR_state;		//needs work, this was made just to provide variable names
+struct ALTAIR_state
+{
+	float RPM;
+	float f_vel;		//f_vel here refers to foreward velocity of the payload
+	float diameter;
+	float pitch;
+};
+
+/*End of code for ALTAIR_state****************************************************************/
 
 typedef struct model_state_s model_state_t;
 struct model_state_s
@@ -106,6 +121,7 @@ _advance_one_timestep(wind_file_cache_t* cache,
         //u_samp = wind_u;
         //v_samp = wind_v;
 
+<<<<<<< HEAD
 		/*
 		begin preliminary code modification to work with thrust values
 		*****************************************************************
@@ -145,6 +161,8 @@ _advance_one_timestep(wind_file_cache_t* cache,
 		END of added code **********************************************************
 		*/
 		
+=======
+>>>>>>> ce62bd926ca025972bcbb37e70b5d6278c404d0e
         state->lat += v_samp * delta_t / ddlat;
         state->lng += u_samp * delta_t / ddlng;
 
