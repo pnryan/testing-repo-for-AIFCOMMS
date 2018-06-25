@@ -22,6 +22,12 @@
 #include "pred.h"
 #include "altitude.h"
 
+//******** includes for thrust and drag
+#include "util/Thrust/Thrust_formula.h"
+#include "util/Thrust/Thrust_interpolation.h"
+
+
+
 extern int verbosity;
 
 #define RADIUS_OF_EARTH 6371009.f
@@ -130,9 +136,9 @@ _advance_one_timestep(wind_file_cache_t* cache,
 		//for now we will define O as being only in the positive u direction, this can be made dynamic and more 
 		//clever at a later time. 
 		
-		float forward_velocity = u_samp;
+		//float forward_velocity = u_samp;
 		
-		float thrust = get_thrust(&state->alt, forward_velocity,rpm, prop_diam, prop_pitch, 
+		//float thrust = get_thrust(&state->alt, forward_velocity,rpm, prop_diam, prop_pitch, 
 		
 		
 		/*

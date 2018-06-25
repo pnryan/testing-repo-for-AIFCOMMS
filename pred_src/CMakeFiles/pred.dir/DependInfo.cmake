@@ -1,6 +1,7 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
@@ -20,6 +21,18 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/glib-2.0"
+  "/usr/lib/glib-2.0/include"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Drag/drag_calc.cpp" "/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles/pred.dir/util/Drag/drag_calc.o"
+  "/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.cpp" "/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o"
+  "/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_interpolation.cpp" "/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles/pred.dir/util/Thrust/Thrust_interpolation.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/glib-2.0"
   "/usr/lib/glib-2.0/include"
   )

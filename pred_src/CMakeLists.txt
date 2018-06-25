@@ -33,6 +33,12 @@ add_executable(pred
 	ini/iniparser.h
 	ini/dictionary.h
 	ini/dictionary.c
+	util/Thrust/Thrust_formula.cpp
+	util/Thrust/Thrust_formula.h
+	util/Thrust/Thrust_interpolation.cpp
+	util/Thrust/Thrust_interpolation.h
+	util/Drag/drag_calc.cpp
+	util/Drag/drag_calc.h
 )
 
 target_link_libraries(pred ${GLIB_LIBRARIES} -lm)

@@ -107,12 +107,20 @@ pred.h
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
 altitude.h
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+util/Thrust/Thrust_formula.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.h
+util/Thrust/Thrust_interpolation.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_interpolation.h
 
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
 wind/wind_file_cache.h
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
 altitude.h
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.h
+
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_interpolation.h
 
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.c
 config.h

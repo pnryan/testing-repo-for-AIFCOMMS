@@ -4,7 +4,8 @@
 // rho is assumed to be value after density correction
    
 // This function would give the thrust due to one propeller in action 
-
+#include <iostream.h>
+#include "Thrust_formula.h"
 #define pi 3.14159265359
 
 float get_rpm(float &rpm , float &h)
