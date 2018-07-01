@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/pred.dir/ini/iniparser.o"
   "CMakeFiles/pred.dir/ini/dictionary.o"
   "CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o"
-  "CMakeFiles/pred.dir/util/Thrust/Thrust_interpolation.o"
-  "CMakeFiles/pred.dir/util/Drag/drag_calc.o"
   "pred.pdb"
   "pred.exe"
   "libpred.dll.a"

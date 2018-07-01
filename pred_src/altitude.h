@@ -42,6 +42,8 @@ int                  altitude_model_get_altitude
 // it seems like overkill to do it this way but it is in preparation for being able to load in
 // arbitrary altitude/time profiles from a file
 
+static float get_density(float altitude);
+
 #define DESCENT_MODE_DESCENDING 1
 #define DESCENT_MODE_NORMAL 0
 

@@ -6,19 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Drag/drag_calc.cpp
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
+wind/wind_file_cache.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
+altitude.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
 
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.cpp
-iostream.h
+iostream
 -
 Thrust_formula.h
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.h
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+../../altitude.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+../../run_model.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
 
 /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.h
+../../run_model.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_interpolation.cpp
-Thrust_interpolation.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_interpolation.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_interpolation.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
+wind_file.h
+/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
 

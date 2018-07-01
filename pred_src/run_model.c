@@ -24,7 +24,7 @@
 
 //******** includes for thrust and drag
 #include "util/Thrust/Thrust_formula.h"
-#include "util/Thrust/Thrust_interpolation.h"
+//#include "util/Thrust/Thrust_interpolation.h"
 
 
 
@@ -36,15 +36,17 @@ extern int verbosity;
 /*Beginning of code for ALTAIR_state**********************************************************/
 // struct containing info on ALTAIR's state
 //for use in thrust  calculations etc.
-typedef struct ALTAIR_state ALTAIR_state;		//needs work, this was made just to provide variable names
+/*typedef struct ALTAIR_state ALTAIR_state;		//needs work, this was made just to provide variable names
 struct ALTAIR_state
 {
 	float RPM;
 	float f_vel;		//f_vel here refers to foreward velocity of the payload
+	float orientation[2];   // a normalized vector <u,v> corresponding to the orientation of ALTAIR's payload
 	float diameter;
 	float pitch;
+	float mass;
 };
-
+*/
 /*End of code for ALTAIR_state****************************************************************/
 
 typedef struct model_state_s model_state_t;
@@ -78,12 +80,14 @@ _get_frame(float lat, float lng, float alt,
     *d_dlng = (2.f * M_PI) * r * sinf(theta) / 360.f;
 }
 
+
+//I have added a parameter to this so that it also takes in an ALTAIR_state
 static int 
 _advance_one_timestep(wind_file_cache_t* cache, 
                       unsigned long delta_t,
                       unsigned long timestamp, unsigned long initial_timestamp,
                       unsigned int n_states, model_state_t* states,
-                      float rmserror)
+                      float rmserror, ALTAIR_state* curr_state)
 {
     unsigned int i;
 
@@ -121,26 +125,10 @@ _advance_one_timestep(wind_file_cache_t* cache,
         //u_samp = wind_u;
         //v_samp = wind_v;
 
-<<<<<<< HEAD
-		/*
-		begin preliminary code modification to work with thrust values
-		*****************************************************************
-		somewhere in this spot we can assign (for now) an arbitrary drag value.
 		
-		given this and our thrust calculations we can modify u_samp and v_samp according 
-		to the amount of thrust, 
-		
-		however we need to have a direction for this thrust in order for this to work. 
-		
-		We may be able to simply assign an arbitrary direction for now. ie: thrust could be considered
-		to be entirely in the positive u direction for the time being.
-		****************************************************************
-		*/
-		
+		// this is a arbitrary value of drag in Newtons for now
 		float drag = 50;
-		float prop_diam = 0.3556; //m 
-		float prop_pitch = 0.11938; //m
-		float rpm = 10000 //this will need to be more thoughtfully taken care of soon
+		
 		
 		//we need to determine the "forward velocity" ie: the velocity in the direction of the thrust
 		//in order to determine the thrust output. 
@@ -149,22 +137,31 @@ _advance_one_timestep(wind_file_cache_t* cache,
 		//this has magnitude V \dot O  where O is the direction in which the propellers are oriented in the "forward"
 		//direction
 		
-		//for now we will define O as being only in the positive u direction, this can be made dynamic and more 
-		//clever at a later time. 
+		curr_state -> f_vel = u_samp; //this will need to be changed when the orientation of ALTAIR becomes dynamic
 		
-		//float forward_velocity = u_samp;
-		
-		//float thrust = get_thrust(&state->alt, forward_velocity,rpm, prop_diam, prop_pitch, 
+		//from this we can determine a new velocity of ALTAIR simply using f_net= m*a. we will assume constant acceleration
+		//in one time step and so V_avg for a timestep is given by V_avg = V_i+a*t/2
 		
 		
-		/*
-		END of added code **********************************************************
-		*/
+		float rho = get_density(state -> alt);
+		float thrust_prop = get_thrust(state -> alt, curr_state ,rho);
+		float thrust = 4*thrust_prop;
+		float velocity = sqrt((u_samp*u_samp)+(v_samp*v_samp));
 		
-=======
->>>>>>> ce62bd926ca025972bcbb37e70b5d6278c404d0e
-        state->lat += v_samp * delta_t / ddlat;
-        state->lng += u_samp * delta_t / ddlng;
+		float force_vector[2] = {drag*(u_samp/velocity)+thrust*curr_state->orientation[0],
+								drag*(v_samp/velocity)+thrust*curr_state->orientation[1]};
+								
+		float accel_vector[2] = {force_vector[0]/curr_state->mass, force_vector[1]/curr_state->mass};
+		
+		float velocity_vector[2] = {u_samp+(accel_vector[0]*delta_t/2),v_samp+(accel_vector[1]*delta_t/2)};
+		
+
+
+
+//        state->lat += v_samp * delta_t / ddlat;
+//        state->lng += u_samp * delta_t / ddlng;
+		state->lat += velocity_vector[1] * delta_t / ddlat;
+        state->lng += velocity_vector[0] * delta_t / ddlng;
 
         state->loglik += (double)(u_lik + v_lik);
     }
@@ -187,6 +184,20 @@ int run_model(wind_file_cache_t* cache, altitude_model_t* alt_model,
               long int initial_timestamp, float rmswinderror) 
 {
     model_state_t* states;
+	
+	
+	//define initial ALTAIR_state
+	struct ALTAIR_state curr_state;
+	
+	curr_state.diameter = 0.3556; //m
+	curr_state.pitch = 0.11938; // m 
+	//this will not be constant in a final version
+	curr_state.RPM = 10000 ;
+	curr_state.orientation[0] = 1;
+	curr_state.orientation[1] = 0;
+	curr_state.mass = 3; //kg  note this needs to be updated with a correct value at some point
+	
+	
     const unsigned int n_states = 1;
     unsigned int i;
 
@@ -211,7 +222,7 @@ int run_model(wind_file_cache_t* cache, altitude_model_t* alt_model,
     while(1)
     {
         r = _advance_one_timestep(cache, TIMESTEP, timestamp, initial_timestamp, 
-                                  n_states, states, rmswinderror);
+                                  n_states, states, rmswinderror,&curr_state);
         if (r == -1) // error getting wind. Save prediction, but emit error messages
             return_code = 0;
 

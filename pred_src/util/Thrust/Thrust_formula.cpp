@@ -4,20 +4,19 @@
 // rho is assumed to be value after density correction
    
 // This function would give the thrust due to one propeller in action 
-<<<<<<< HEAD
-#include <iostream.h>
+#include <iostream>
 #include "Thrust_formula.h"
 #define pi 3.14159265359
-=======
+
 
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
->>>>>>> ce62bd926ca025972bcbb37e70b5d6278c404d0e
 
-#include "altitude.h"
-#include "run_model.h"  
+
+#include "../../altitude.h"
+#include "../../run_model.h"  
 
 float get_rpm(float &rpm , float &alt)
 {
@@ -34,12 +33,12 @@ float get_rpm(float &rpm , float &alt)
 float get_thrust(float alt, ALTAIR_state* curr_state ,float rho /* take from get_density */ )
 {
 	float Thrust_prop,a;
-	float curr_RPM = *curr_state->RPM;
-	float pitch = *curr_state->pitch;
-	float diameter = *curr_state->diameter;
-	float curr_f_vel = *curr_state->f_vel;
+	float curr_RPM = curr_state->RPM;
+	float pitch = curr_state->pitch;
+	float diameter = curr_state->diameter;
+	float curr_f_vel = curr_state->f_vel;
 
-	rpm_eff = get_rpm(curr_RPM, alt);       // effective rpm
+	float rpm_eff = get_rpm(curr_RPM, alt);       // effective rpm
 	a = (rpm_eff*0.0254*pitch/60); // Comes below in the equation of thrust
 	Thrust_prop = 1.225*rho*(M_PI/(0.0254*diameter))*(pow(a,2) - a*curr_f_vel)*pow(diameter/(3.29546*pitch),1.5);
 	return Thrust_prop;

@@ -10,7 +10,6 @@
 // IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
 // PARTICULAR PURPOSE.
 // --------------------------------------------------------------
-
 #ifndef __RUN_MODEL_H__
 #define __RUN_MODEL_H__
 
@@ -35,6 +34,20 @@ int run_model(wind_file_cache_t* cache, altitude_model_t* alt_model,
 int get_wind(wind_file_cache_t* cache, float lat, float lng, float alt, long int timestamp, float* wind_v, float* wind_u, float *wind_var);
 // note: get_wind will likely call load_data and load a different tile into data, so just be careful that data could be pointing
 // somewhere else after running get_wind
+
+
+typedef struct ALTAIR_state ALTAIR_state;		//needs work, this was made just to provide variable names
+struct ALTAIR_state
+{
+	float RPM;
+	float f_vel;		//f_vel here refers to foreward velocity of the payload
+	float orientation[2];   // a normalized vector <u,v> corresponding to the orientation of ALTAIR's payload
+	float diameter;
+	float pitch;
+	float mass;
+};
+
+
 
 #endif // __RUN_MODEL_H__
 

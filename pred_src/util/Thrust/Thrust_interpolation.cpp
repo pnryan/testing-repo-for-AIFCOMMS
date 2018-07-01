@@ -1,9 +1,16 @@
-<<<<<<< HEAD
+
 // Have to change variable names and look after proper inheritance
 // We need to inherit forward velocity,rate of revolution,diameter,density in SI Units
  
 #include "Thrust_interpolation.h" 
 
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+#include "../../altitude.h"
+#include "../../run_model.h"
 /* Herein get_CT, given that it is a very approximate analysis we are doing, I came up with a simple linear expression for C_t.
      From the plot it was evident that C_t tends to be more and more linear as we.... 
      move towards a smaller pitch/diameter ratio.
@@ -12,55 +19,14 @@
      I thought this was better than interpolation for now. Please let me know if I should change this!
 */ 
 // This is a function that calculates the Coefficient of Thrust
-float get_CT(float &J)
-{
-    //float a = 0.0881; // Declare in global scope later
-    // float C_t = (-a/0.7)*J + a;
-    // return C_t;
-    // OR
-    //return ( (-a/0.7)*J + a );
-    // OR
-    
-/*
-    if (J>=0 && J<=0.7)
-    return ( (-0.0881/0.7)*J + 0.0881 );
-    else
-    return 0;
-*/
-return 0.25*(1+copysign(1.0, J))*(1-copysign(1.0, (J-0.7))*( (-0.0881/0.7)*J + 0.0881 );
-}
-   
-// This function would give the thrust due to one propeller in action 
-float get_thrust(float h, float vel, float rpm , float Dia ,float rho /* take from get_density */ ) // Probably could be inherited from a struct. 
-                                                                                                   // Change it later if so!
-{
-
-float J; // non_dimensionalised velocity
-float Thrust_prop,C_t;
-J = vel/(rpm*Dia);                                 //  here vel is forward velocity i.e relative axial velocity to undisturbed flow 
-C_t = get_CT(J);
-Thrust_prop = C_t*rho*pow(rpm,2)*pow(Dia,4);
-return Thrust_prop;
-}
-=======
-// Have to change variable names and look after proper inheritance
-// We need to inherit forward velocity,rate of revolution,diameter,density in SI Units
-
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-
-#include "altitude.h"
-#include "run_model.h"
 
 //Computes value for J=v/nd 'dimensionless velocity'
 //Figured it was better than computing it in both functions
 float get_J(ALTAIR_state* curr_state)
 {
-	float curr_RPM = *curr_state->RPM;								//access states from ALTAIR_state
-	float curr_f_vel = *curr_state->f_vel;
-	float curr_diameter = *curr_state->diameter;
+	float curr_RPM = curr_state->RPM;								//access states from ALTAIR_state
+	float curr_f_vel = curr_state->f_vel;
+	float curr_diameter = curr_state->diameter;
 	
 	float ang_freq = curr_RPM * M_PI / 30;							//turn RPM into radians/s
 	float J = curr_f_vel / (ang_freq*curr_diameter);				//get dimensionless velocity
@@ -90,11 +56,10 @@ float get_CT(ALTAIR_state* curr_state)
 	}
 
 	return 0;
-
 }
 
 // This function would give the thrust due to one propeller in action 
-float get_thrust(ALTAIR_state* curr_state, float rho /* take from get_density */) // inherited from struct in run_model.c- may need bug fixes when ALTAIR_state is complete
+float get_interp_thrust(ALTAIR_state* curr_state, float rho) // inherited from struct in run_model.c- may need bug fixes when ALTAIR_state is complete
 {
 	float Thrust_prop, C_t;
 	float J = get_J(curr_state);
@@ -106,4 +71,4 @@ float get_thrust(ALTAIR_state* curr_state, float rho /* take from get_density */
 	Thrust_prop = C_t * rho*pow(curr_RPM, 2)*pow(curr_diameter, 4);	//calculation of thrust per model
 	return Thrust_prop;
 }
->>>>>>> ce62bd926ca025972bcbb37e70b5d6278c404d0e
+
