@@ -35,7 +35,7 @@ int get_wind(wind_file_cache_t* cache, float lat, float lng, float alt, long int
 // note: get_wind will likely call load_data and load a different tile into data, so just be careful that data could be pointing
 // somewhere else after running get_wind
 
-
+/*
 typedef struct ALTAIR_state ALTAIR_state;		//needs work, this was made just to provide variable names
 struct ALTAIR_state
 {
@@ -47,7 +47,7 @@ struct ALTAIR_state
 	float mass;
 };
 
-
+*/
 
 #endif // __RUN_MODEL_H__
 

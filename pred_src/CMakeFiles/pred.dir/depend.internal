@@ -30,7 +30,7 @@ CMakeFiles/pred.dir/run_model.o
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.c
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
- /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.h
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.hh
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.h
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
@@ -133,10 +133,14 @@ CMakeFiles/pred.dir/wind/wind_file_cache.o
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.c
  /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o
- /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
- /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
- /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.cpp
- /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.h
- /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
- /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.cpp
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.hh
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustInterpMethod.hh
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustMomTransMethod.hh
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustInterpMethod.cc
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustInterpMethod.hh
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustMomTransMethod.cc
+ /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustMomTransMethod.hh

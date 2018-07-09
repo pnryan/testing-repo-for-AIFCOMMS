@@ -23,9 +23,7 @@
 #include "altitude.h"
 
 //******** includes for thrust and drag
-#include "util/Thrust/Thrust_formula.h"
-//#include "util/Thrust/Thrust_interpolation.h"
-
+#include "util/Thrust/thrustCalcMethod.hh"
 
 
 extern int verbosity;
@@ -33,21 +31,6 @@ extern int verbosity;
 
 #define RADIUS_OF_EARTH 6371009.f
 
-/*Beginning of code for ALTAIR_state**********************************************************/
-// struct containing info on ALTAIR's state
-//for use in thrust  calculations etc.
-/*typedef struct ALTAIR_state ALTAIR_state;		//needs work, this was made just to provide variable names
-struct ALTAIR_state
-{
-	float RPM;
-	float f_vel;		//f_vel here refers to foreward velocity of the payload
-	float orientation[2];   // a normalized vector <u,v> corresponding to the orientation of ALTAIR's payload
-	float diameter;
-	float pitch;
-	float mass;
-};
-*/
-/*End of code for ALTAIR_state****************************************************************/
 
 typedef struct model_state_s model_state_t;
 struct model_state_s
@@ -142,7 +125,7 @@ _advance_one_timestep(wind_file_cache_t* cache,
 		//from this we can determine a new velocity of ALTAIR simply using f_net= m*a. we will assume constant acceleration
 		//in one time step and so V_avg for a timestep is given by V_avg = V_i+a*t/2
 		
-		
+	/*	
 		float rho = get_density(state -> alt);
 		float thrust_prop = get_thrust(state -> alt, curr_state ,rho);
 		float thrust = 4*thrust_prop;
@@ -157,11 +140,11 @@ _advance_one_timestep(wind_file_cache_t* cache,
 		
 
 
-
-//        state->lat += v_samp * delta_t / ddlat;
-//        state->lng += u_samp * delta_t / ddlng;
-		state->lat += velocity_vector[1] * delta_t / ddlat;
-        state->lng += velocity_vector[0] * delta_t / ddlng;
+*/
+        state->lat += v_samp * delta_t / ddlat;
+        state->lng += u_samp * delta_t / ddlng;
+//		state->lat += velocity_vector[1] * delta_t / ddlat;
+//		state->lng += velocity_vector[0] * delta_t / ddlng;
 
         state->loglik += (double)(u_lik + v_lik);
     }

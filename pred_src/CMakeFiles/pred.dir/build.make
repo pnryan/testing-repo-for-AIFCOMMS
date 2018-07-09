@@ -321,28 +321,76 @@ CMakeFiles/pred.dir/ini/dictionary.o.provides: CMakeFiles/pred.dir/ini/dictionar
 CMakeFiles/pred.dir/ini/dictionary.o.provides.build: CMakeFiles/pred.dir/ini/dictionary.o
 
 
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o: /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o"
-	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o -c /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.cpp
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o: CMakeFiles/pred.dir/flags.make
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o: /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o -c /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.cpp
 
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pred.dir/util/Thrust/Thrust_formula.i"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.cpp > CMakeFiles/pred.dir/util/Thrust/Thrust_formula.i
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.cpp > CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.i
 
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pred.dir/util/Thrust/Thrust_formula.s"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/Thrust_formula.cpp -o CMakeFiles/pred.dir/util/Thrust/Thrust_formula.s
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.cpp -o CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.s
 
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.requires:
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.requires:
 
-.PHONY : CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.requires
+.PHONY : CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.requires
 
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.provides: CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.requires
-	$(MAKE) -f CMakeFiles/pred.dir/build.make CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.provides.build
-.PHONY : CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.provides
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.provides: CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.requires
+	$(MAKE) -f CMakeFiles/pred.dir/build.make CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.provides.build
+.PHONY : CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.provides
 
-CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.provides.build: CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o
+CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.provides.build: CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o
+
+
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o: CMakeFiles/pred.dir/flags.make
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o: /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustInterpMethod.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o -c /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustInterpMethod.cc
+
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustInterpMethod.cc > CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.i
+
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustInterpMethod.cc -o CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.s
+
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.requires:
+
+.PHONY : CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.requires
+
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.provides: CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.requires
+	$(MAKE) -f CMakeFiles/pred.dir/build.make CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.provides.build
+.PHONY : CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.provides
+
+CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.provides.build: CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o
+
+
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o: CMakeFiles/pred.dir/flags.make
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o: /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustMomTransMethod.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o -c /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustMomTransMethod.cc
+
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustMomTransMethod.cc > CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.i
+
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustMomTransMethod.cc -o CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.s
+
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.requires:
+
+.PHONY : CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.requires
+
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.provides: CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.requires
+	$(MAKE) -f CMakeFiles/pred.dir/build.make CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.provides.build
+.PHONY : CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.provides
+
+CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.provides.build: CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o
 
 
 # Object files for target pred
@@ -358,7 +406,9 @@ pred_OBJECTS = \
 "CMakeFiles/pred.dir/run_model.o" \
 "CMakeFiles/pred.dir/ini/iniparser.o" \
 "CMakeFiles/pred.dir/ini/dictionary.o" \
-"CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o"
+"CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o" \
+"CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o" \
+"CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o"
 
 # External object files for target pred
 pred_EXTERNAL_OBJECTS =
@@ -374,10 +424,12 @@ pred.exe: CMakeFiles/pred.dir/pred.o
 pred.exe: CMakeFiles/pred.dir/run_model.o
 pred.exe: CMakeFiles/pred.dir/ini/iniparser.o
 pred.exe: CMakeFiles/pred.dir/ini/dictionary.o
-pred.exe: CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o
+pred.exe: CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o
+pred.exe: CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o
+pred.exe: CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o
 pred.exe: CMakeFiles/pred.dir/build.make
 pred.exe: CMakeFiles/pred.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable pred.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable pred.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pred.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -396,7 +448,9 @@ CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/pred.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/run_model.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/ini/iniparser.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/ini/dictionary.o.requires
-CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/util/Thrust/Thrust_formula.o.requires
+CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/util/Thrust/thrustCalcMethod.o.requires
+CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/util/Thrust/thrustInterpMethod.o.requires
+CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/util/Thrust/thrustMomTransMethod.o.requires
 
 .PHONY : CMakeFiles/pred.dir/requires
 
