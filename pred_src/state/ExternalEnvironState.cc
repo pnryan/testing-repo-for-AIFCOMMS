@@ -38,7 +38,7 @@
 ExternalEnvironState::ExternalEnvironState()
  : _outsideTemp(              0. ),
    _outsideAirDensity (       1. ),
-   _forwardVelocityRelToWind( 0. )
+   _forwardVelocityRelToWind( 0. ),      _altitude (                5. )
 {
 }
 
@@ -68,7 +68,7 @@ float
 ExternalEnvironState::getForwardVelocityRelToWind()
 {
   return _forwardVelocityRelToWind;
-}
+}floatExternalEnvironState::getAltitude(){		return _altitude;	}
 
 
 
@@ -88,6 +88,6 @@ void
 ExternalEnvironState::setForwardVelocityRelToWind(  float forwardVelocityRelToWind )
 {
   _forwardVelocityRelToWind = forwardVelocityRelToWind;
-}
+}voidExternalEnvironState::setAltitude(                  float altitude                  ){		_altitude = altitude;	}
 
 

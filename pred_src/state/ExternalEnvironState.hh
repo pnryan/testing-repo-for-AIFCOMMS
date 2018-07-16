@@ -45,18 +45,18 @@ class   ExternalEnvironState {
 
         virtual float                  getOutsideTemp();
         virtual float                  getOutsideAirDensity();
-        virtual float                  getForwardVelocityRelToWind();
+        virtual float                  getForwardVelocityRelToWind();				virtual float                  getAltitude();
 
         virtual void                   setOutsideTemp(              float  outsideTemp               );
         virtual void                   setOutsideAirDensity(        float  outsideAirDensity         );
-        virtual void                   setForwardVelocityRelToWind( float  forwardVelocityRelToWind  );
+        virtual void                   setForwardVelocityRelToWind( float  forwardVelocityRelToWind  );				virtual void                   setAltitude(                 float  Altitude                  );
 
 
     private:
 
         float                          _outsideTemp;
         float                          _outsideAirDensity;
-        float                          _forwardVelocityRelToWind;
+        float                          _forwardVelocityRelToWind;				float						   _altitude;
 
 };
 

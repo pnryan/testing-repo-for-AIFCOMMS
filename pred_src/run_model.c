@@ -23,7 +23,6 @@
 #include "altitude.h"
 
 //******** includes for thrust and drag
-#include "util/Thrust/thrustCalcMethod.hh"
 
 
 extern int verbosity;
@@ -70,7 +69,7 @@ _advance_one_timestep(wind_file_cache_t* cache,
                       unsigned long delta_t,
                       unsigned long timestamp, unsigned long initial_timestamp,
                       unsigned int n_states, model_state_t* states,
-                      float rmserror, ALTAIR_state* curr_state)
+                      float rmserror)
 {
     unsigned int i;
 
@@ -119,28 +118,10 @@ _advance_one_timestep(wind_file_cache_t* cache,
 		//right now our velocity is exactly that of the wind, written as a vector V=<wind_u,wind_v,acsent_rate>
 		//this has magnitude V \dot O  where O is the direction in which the propellers are oriented in the "forward"
 		//direction
-		
-		curr_state -> f_vel = u_samp; //this will need to be changed when the orientation of ALTAIR becomes dynamic
-		
+
 		//from this we can determine a new velocity of ALTAIR simply using f_net= m*a. we will assume constant acceleration
 		//in one time step and so V_avg for a timestep is given by V_avg = V_i+a*t/2
-		
-	/*	
-		float rho = get_density(state -> alt);
-		float thrust_prop = get_thrust(state -> alt, curr_state ,rho);
-		float thrust = 4*thrust_prop;
-		float velocity = sqrt((u_samp*u_samp)+(v_samp*v_samp));
-		
-		float force_vector[2] = {drag*(u_samp/velocity)+thrust*curr_state->orientation[0],
-								drag*(v_samp/velocity)+thrust*curr_state->orientation[1]};
-								
-		float accel_vector[2] = {force_vector[0]/curr_state->mass, force_vector[1]/curr_state->mass};
-		
-		float velocity_vector[2] = {u_samp+(accel_vector[0]*delta_t/2),v_samp+(accel_vector[1]*delta_t/2)};
-		
 
-
-*/
         state->lat += v_samp * delta_t / ddlat;
         state->lng += u_samp * delta_t / ddlng;
 //		state->lat += velocity_vector[1] * delta_t / ddlat;
@@ -168,7 +149,7 @@ int run_model(wind_file_cache_t* cache, altitude_model_t* alt_model,
 {
     model_state_t* states;
 	
-	
+	/*
 	//define initial ALTAIR_state
 	struct ALTAIR_state curr_state;
 	
@@ -179,7 +160,7 @@ int run_model(wind_file_cache_t* cache, altitude_model_t* alt_model,
 	curr_state.orientation[0] = 1;
 	curr_state.orientation[1] = 0;
 	curr_state.mass = 3; //kg  note this needs to be updated with a correct value at some point
-	
+	*/
 	
     const unsigned int n_states = 1;
     unsigned int i;
@@ -205,7 +186,7 @@ int run_model(wind_file_cache_t* cache, altitude_model_t* alt_model,
     while(1)
     {
         r = _advance_one_timestep(cache, TIMESTEP, timestamp, initial_timestamp, 
-                                  n_states, states, rmswinderror,&curr_state);
+                                  n_states, states, rmswinderror);
         if (r == -1) // error getting wind. Save prediction, but emit error messages
             return_code = 0;
 

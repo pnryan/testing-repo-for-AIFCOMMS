@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.c
 stdio.h
 -
 stdlib.h
@@ -14,17 +14,17 @@ stdlib.h
 math.h
 -
 pred.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
 altitude.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
 run_model.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.c
 dictionary.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.h
 stdio.h
 -
 stdlib.h
@@ -34,7 +34,7 @@ string.h
 unistd.h
 -
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.h
 stdio.h
 -
 stdlib.h
@@ -44,13 +44,13 @@ string.h
 unistd.h
 -
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.c
 ctype.h
 -
 iniparser.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.h
 stdio.h
 -
 stdlib.h
@@ -58,9 +58,9 @@ stdlib.h
 string.h
 -
 dictionary.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.c
 stdio.h
 -
 stdlib.h
@@ -74,21 +74,21 @@ errno.h
 unistd.h
 -
 ini/iniparser.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.h
 util/gopt.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.h
 wind/wind_file_cache.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
 run_model.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
 pred.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
 altitude.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.c
 math.h
 -
 stdio.h
@@ -98,31 +98,27 @@ stdlib.h
 assert.h
 -
 wind/wind_file.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
 util/random.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.h
 run_model.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
 pred.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.h
 altitude.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
-util/Thrust/thrustCalcMethod.hh
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.hh
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.h
 wind/wind_file_cache.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
 altitude.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/Thrust/thrustCalcMethod.hh
-
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.c
 config.h
 -
 getdelim.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.h
 limits.h
 -
 stdlib.h
@@ -130,7 +126,7 @@ stdlib.h
 errno.h
 -
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.h
 stddef.h
 -
 stdio.h
@@ -138,15 +134,15 @@ stdio.h
 sys/types.h
 -
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.c
 config.h
 -
 getdelim.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.h
 getline.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
 stddef.h
 -
 stdio.h
@@ -154,7 +150,7 @@ stdio.h
 sys/types.h
 -
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.c
 stdio.h
 -
 stdlib.h
@@ -162,25 +158,25 @@ stdlib.h
 string.h
 -
 gopt.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.h
 sysexits.h
 -
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.c
 random.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.h
 glib.h
 -
 math.h
 -
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.c
 wind_file.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
 stdio.h
 -
 stdlib.h
@@ -190,15 +186,15 @@ assert.h
 math.h
 -
 ../util/getline.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.c
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.c
 wind_file_cache.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
 wind_file.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
 sys/types.h
 -
 sys/stat.h
@@ -220,11 +216,11 @@ string.h
 math.h
 -
 ../util/getline.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.h
 
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.h
 wind_file.h
-/cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.h
 
 /usr/include/glib-2.0/glib.h
 glib/galloca.h

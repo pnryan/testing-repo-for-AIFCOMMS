@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Ampps/www/AIFCOMSSwithCUPredictorTest/pred_src
+# Install script for directory: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

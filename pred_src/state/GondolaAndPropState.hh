@@ -30,7 +30,7 @@
 #ifndef __GONDOLAANDPROPSTATE_HH__
 #define __GONDOLAANDPROPSTATE_HH__
 
-#define ALTAIRPropellerDiameter  0.3556             // 14" = 35.56 cm = 0.3556 m
+#define ALTAIRPropellerDiameter  0.3556             // 14" = 35.56 cm = 0.3556 m#define ALTAIRPropellerPitch 	 0.11938      		// 4.7" = 11.938cm = 0.11938 m
 
 //------------------------------------
 // Collaborating Class Declarations --
@@ -47,7 +47,7 @@ class   GondolaAndPropState {
 
         virtual ~GondolaAndPropState();
 
-        virtual float                  getPropellerDiameter() { return ALTAIRPropellerDiameter; }
+        virtual float                  getPropellerDiameter() { return ALTAIRPropellerDiameter; }				virtual float 				   getPropellerPitch() { return ALTAIRPropellerPitch;}
 
         virtual int                    getRPMMotor(     int  motorNum                     );    // motorNum goes from 1 to 4 (not 0 to 3)
         virtual int                    getRPMMotor1();

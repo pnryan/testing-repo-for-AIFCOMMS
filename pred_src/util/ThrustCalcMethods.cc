@@ -75,12 +75,12 @@ float ThrustCalcMethods::getInterpMethodThrust()
 
 //
 // Get the thrust using the momentum transfer method:
-//
-// Thrust = 
+//source: https://www.electricrcaircraftguy.com/2014/04/propeller-static-dynamic-thrust-equation-background.html// C = (1.225*\pi)/(0.0254*diameter)// RPM' = RPM/(1.395 + 0.3246*alt + 0.05041*pow(alt,2) + 0.006461*pow(alt,3))		//note the method of obtaining this altitude correction is a little bit hand wavy		//and I am not incredibly sure about it... see source above. //a = (RPM'*0.0254*pitch)/60//b = diameter/(3.29546*pitch)		
+// Thrust = C[a^2-(a*v_0)]*b^1.5
 //
 
-float ThrustCalcMethods::getMomTransMethodThrust() {
-   return 1.5;
+float ThrustCalcMethods::getMomTransMethodThrust() {	float thrustProp[4], propRPS[4]; 		float d = altairState->getGondAndProp()->getPropellerDiameter();		float pitch = altairState->getGondAndProp()->getPropellerPitch();		float fVel = altairState->getExtEnv()->getForwardVelocityRelToWind();		float alt = altairState->getExtEnv() ->getAltitude();		float C = (1.225*M_PI)/(0.0254*d);		float b = d/(3.29546*pitch);		for (int i = 0; i < 4; ++i) {				float RPM = altairState->getGondAndProp()->getRPMMotor(i+1);				float newRPM = RPM/(1.395 + 0.3246*alt + 0.05041*pow(alt,2) + 0.006461*pow(alt,3));				float a = (newRPM*0.0254*pitch)/60;				thrustProp[i] = C*(pow(a,2)-a*fVel)*pow(b,1.5);			}	
+	return (thrustProp[0]+thrustProp[1]+thrustProp[2]+thrustProp[3]);
 }
 
 
