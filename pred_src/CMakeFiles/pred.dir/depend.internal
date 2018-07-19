@@ -142,12 +142,8 @@ CMakeFiles/pred.dir/state/BalloonAndPfoilState.o
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/BalloonAndPfoilState.hh
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
 CMakeFiles/pred.dir/state/ExternalEnvironState.o
- /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.cc
- /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh
- /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
 CMakeFiles/pred.dir/state/GondolaAndPropState.o
- /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.cc
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
 CMakeFiles/pred.dir/state/OptSourcePayloadState.o
@@ -155,6 +151,13 @@ CMakeFiles/pred.dir/state/OptSourcePayloadState.o
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.cc
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.hh
+CMakeFiles/pred.dir/util/DragCalcMethods.o
+ /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
+ /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/BalloonAndPfoilState.hh
+ /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh
+ /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
+ /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.cc
+ /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.hh
 CMakeFiles/pred.dir/util/ThrustCalcMethods.o
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
  /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh

@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

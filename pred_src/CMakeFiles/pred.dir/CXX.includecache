@@ -27,23 +27,13 @@ BalloonAndPfoilState.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/BalloonAndPfoilState.hh
 
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.cc
-ExternalEnvironState.hh
-/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh
 
-/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh
-ALTAIR_state.hh
-/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
-ExternalEnvironState.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh
 
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.cc
 GondolaAndPropState.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
 
-/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
-ALTAIR_state.hh
-/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
-GondolaAndPropState.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
 
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.cc
@@ -55,6 +45,24 @@ ALTAIR_state.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
 OptSourcePayloadState.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.hh
+
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.cc
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+DragCalcMethods.hh
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.hh
+../state/ALTAIR_state.hh
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
+../state/ExternalEnvironState.hh
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh
+../state/BalloonAndPfoilState.hh
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/BalloonAndPfoilState.hh
+
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.hh
 
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/ThrustCalcMethods.cc
 ThrustCalcMethods.hh

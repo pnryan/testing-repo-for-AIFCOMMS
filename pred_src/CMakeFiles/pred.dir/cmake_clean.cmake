@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pred.dir/state/GondolaAndPropState.o"
   "CMakeFiles/pred.dir/state/OptSourcePayloadState.o"
   "CMakeFiles/pred.dir/util/ThrustCalcMethods.o"
+  "CMakeFiles/pred.dir/util/DragCalcMethods.o"
   "CMakeFiles/pred.dir/util/gopt.o"
   "CMakeFiles/pred.dir/util/getdelim.o"
   "CMakeFiles/pred.dir/util/getline.o"

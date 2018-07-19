@@ -11,7 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeSystem.cmake"
-  "CMakeLists.txt"
+  "/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeLists.txt"
   "/usr/share/cmake-3.6.2/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.6.2/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.6.2/Modules/CMakeCommonLanguageInclude.cmake"

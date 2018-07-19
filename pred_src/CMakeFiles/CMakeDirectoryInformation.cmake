@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
