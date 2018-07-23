@@ -36,7 +36,7 @@
 class   ExternalEnvironState;
 class   BalloonAndPfoilState;
 class   GondolaAndPropState;
-class   OptSourcePayloadState;
+class   OptSourcePayloadState;class	InitBalloonState;
 
 //              ---------------------
 //              -- Class Interface --
@@ -49,23 +49,23 @@ class   ALTAIR_state {
 
         virtual ~ALTAIR_state();
 
-        virtual ExternalEnvironState*  getExtEnv();
-        virtual BalloonAndPfoilState*  getBalAndPfoil();
-        virtual GondolaAndPropState*   getGondAndProp();
-        virtual OptSourcePayloadState* getOptSource();
+        virtual ExternalEnvironState*	getExtEnv();
+        virtual BalloonAndPfoilState*	getBalAndPfoil();
+        virtual GondolaAndPropState* 	getGondAndProp();
+        virtual OptSourcePayloadState*	getOptSource();				virtual InitBalloonState*		getInitBal();
 
-        virtual void                   setExtEnv(         ExternalEnvironState*  statePointer  );
-        virtual void                   setBalAndPfoil(    BalloonAndPfoilState*  statePointer  );
-        virtual void                   setGondAndProp(    GondolaAndPropState*   statePointer  );
-        virtual void                   setOptSource(      OptSourcePayloadState* statePointer  );
+        virtual void                   	setExtEnv(         	ExternalEnvironState*  	statePointer  );
+        virtual void                  	setBalAndPfoil(    	BalloonAndPfoilState*  	statePointer  );
+        virtual void                  	setGondAndProp(    	GondolaAndPropState*   	statePointer  );
+        virtual void                   	setOptSource(      	OptSourcePayloadState* 	statePointer  );				virtual void					setInitBal(			InitBalloonState*		statePointer  );
 
 
     private:
 
-        ExternalEnvironState*          _externalEnvironState;
-        BalloonAndPfoilState*          _balloonAndPfoilState;
-        GondolaAndPropState*           _gondolaAndPropState;
-        OptSourcePayloadState*         _optSourcePayloadState;
+        ExternalEnvironState*          	_externalEnvironState;
+        BalloonAndPfoilState*          	_balloonAndPfoilState;
+        GondolaAndPropState*           	_gondolaAndPropState;
+        OptSourcePayloadState*         	_optSourcePayloadState;				InitBalloonState*				_InitBalloonState;
 
 };
 

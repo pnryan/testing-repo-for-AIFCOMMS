@@ -21,6 +21,8 @@ add_executable(pred
         state/GondolaAndPropState.hh
         state/OptSourcePayloadState.cc
         state/OptSourcePayloadState.hh
+        state/InitBalloonState.cc
+        state/InitBalloonState.hh
         util/ThrustCalcMethods.cc
         util/ThrustCalcMethods.hh
         util/DragCalcMethods.cc

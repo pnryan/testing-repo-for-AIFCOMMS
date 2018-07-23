@@ -36,6 +36,12 @@ GondolaAndPropState.hh
 
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.hh
 
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/InitBalloonState.cc
+InitBalloonState.hh
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/InitBalloonState.hh
+
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/InitBalloonState.hh
+
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.cc
 OptSourcePayloadState.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.hh
@@ -59,8 +65,8 @@ DragCalcMethods.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.hh
 ../state/ExternalEnvironState.hh
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.hh
-../state/BalloonAndPfoilState.hh
-/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/BalloonAndPfoilState.hh
+../state/InitBalloonState.hh
+/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/InitBalloonState.hh
 
 /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.hh
 

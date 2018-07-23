@@ -68,11 +68,13 @@
 
 #include "../state/ExternalEnvironState.hh"
 
-//#include "../state/GondolaAndPropState.hh"
-
-#include "../state/BalloonAndPfoilState.hh"
+#include "../state/InitBalloonState.hh"
 
 
+
+
+
+#define eulersNum  2.71828
 
 
 //              ----------------------------------------
@@ -90,35 +92,64 @@ float DragCalcMethods::getBalloonDrag()
 
 {
 	
-	float initState 		= altairState->getBalAndPfoil()->getBalloonInitTemp()*altairState->getBalAndPfoil()->getBalloonInitPressure()*
-							altairState->getBalAndPfoil()->getBalloonInitVolume()				;
-						
-	float payloadVelocity	= altairState->getExtEnv()->getForwardVelocityRelToWind()			;
+	InitBalloonState* initBal 		= altairState->getInitBal()													;
 	
-	float temp			 	= altairState->getExtEnv() -> getOutsideTemp() 						;
+	float initState 				= initBal->getInitTemp()*initBal->getInitPressure()*initBal->getInitVolume();
+							
+	ExternalEnvironState* ExtEnv 	= altairState-> getExtEnv()													;
 	
-	float density			= altairState->getExtEnv()->getOutsideAirDensity()					;
+	float payloadVelocity			= ExtEnv-> getForwardVelocityRelToWind()									;
 	
-	float pressure 			= 2.488*(temp/216.6)-11.388											;
+	float temp			 			= ExtEnv-> getOutsideTemp() 												;
 	
-	float viscosity 		= (1.458e-6*sqrt(temp))/(1+110.4/temp)								;
+	float density					= ExtEnv-> getOutsideAirDensity()											;
+	
+	float elevationASL				= ExtEnv-> getElevationASL()												;
+	
+	
+	
+	
+	
+	
+	float pressure 					= 0																			;
+	
+	if (elevationASL > 25000) 
+	{
+		pressure 					= 2.488*pow((temp/216.6),-11.388)											;
+	}
+	else if (11000 < elevationASL && elevationASL < 25000)
+	{
+		pressure					= 22.65*pow(eulersNum,1.73-(0.000157*elevationASL))							;
+	}
+	else
+	{
+		pressure					= 101.29*pow(temp/288.8,5.256)												;
+	}
+		//this equation comes from the following source:https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html
+		
+		
+		
+		
+	
+	
+	float viscosity 				= (1.458e-6*sqrt(temp))/(1+110.4/temp)										;
 
-	float rho_nu 			= density/viscosity													;
+	float rho_nu 					= density/viscosity															;
 	
-	float balloonVolume 	= (temp/pressure)*initState  										;
+	float balloonVolume 			= (temp/pressure)*initState  												;
 	
-	float balloonRadius  	= pow((0.75*balloonVolume/M_PI),(1/3))								;
+	float balloonRadius  			= pow((0.75*balloonVolume/M_PI),(1/3))										;
 	
-	float crossSecArea   	= M_PI*balloonRadius*balloonRadius     								;
+	float crossSecArea   			= M_PI*balloonRadius*balloonRadius     										;
 	
-	float Re			 	= rho_nu*payloadVelocity*2*balloonRadius							;
+	float Re			 			= rho_nu*payloadVelocity*2*balloonRadius									;
 	
-	float dragCoef       	= 24/Re + 2.6*(Re/5)/(1+pow((Re/5),1.52)) + 0.411*pow(Re/2.63e5,-7.94)/(1+pow(Re/2.63e5,-8)) + 0.25*(Re/1e6)/(1+(Re/1e6));
+	float dragCoef       			= 24/Re + 2.6*(Re/5)/(1+pow((Re/5),1.52)) + 0.411*pow(Re/2.63e5,-7.94)/(1+pow(Re/2.63e5,-8)) + 0.25*(Re/1e6)/(1+(Re/1e6));
 							//This equation comes from curve fitting and is sourced from: http://pages.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2016.pdf
 
-	float drag 				= dragCoef*crossSecArea*density*payloadVelocity*payloadVelocity/2	;
+	float drag 						= dragCoef*crossSecArea*density*payloadVelocity*payloadVelocity/2			;
 	
-	return drag																					;	
+	return drag																									;	
 	
 }
 

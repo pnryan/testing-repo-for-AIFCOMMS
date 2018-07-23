@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src
+CMAKE_BINARY_DIR = /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pred.dir/depend.make
@@ -58,8 +58,8 @@ include CMakeFiles/pred.dir/progress.make
 include CMakeFiles/pred.dir/flags.make
 
 CMakeFiles/pred.dir/state/ALTAIR_state.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/state/ALTAIR_state.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pred.dir/state/ALTAIR_state.o"
+CMakeFiles/pred.dir/state/ALTAIR_state.o: state/ALTAIR_state.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pred.dir/state/ALTAIR_state.o"
 	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/state/ALTAIR_state.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ALTAIR_state.cc
 
 CMakeFiles/pred.dir/state/ALTAIR_state.i: cmake_force
@@ -82,8 +82,8 @@ CMakeFiles/pred.dir/state/ALTAIR_state.o.provides.build: CMakeFiles/pred.dir/sta
 
 
 CMakeFiles/pred.dir/state/ExternalEnvironState.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/state/ExternalEnvironState.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pred.dir/state/ExternalEnvironState.o"
+CMakeFiles/pred.dir/state/ExternalEnvironState.o: state/ExternalEnvironState.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pred.dir/state/ExternalEnvironState.o"
 	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/state/ExternalEnvironState.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/ExternalEnvironState.cc
 
 CMakeFiles/pred.dir/state/ExternalEnvironState.i: cmake_force
@@ -106,8 +106,8 @@ CMakeFiles/pred.dir/state/ExternalEnvironState.o.provides.build: CMakeFiles/pred
 
 
 CMakeFiles/pred.dir/state/BalloonAndPfoilState.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/state/BalloonAndPfoilState.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/BalloonAndPfoilState.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pred.dir/state/BalloonAndPfoilState.o"
+CMakeFiles/pred.dir/state/BalloonAndPfoilState.o: state/BalloonAndPfoilState.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pred.dir/state/BalloonAndPfoilState.o"
 	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/state/BalloonAndPfoilState.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/BalloonAndPfoilState.cc
 
 CMakeFiles/pred.dir/state/BalloonAndPfoilState.i: cmake_force
@@ -130,8 +130,8 @@ CMakeFiles/pred.dir/state/BalloonAndPfoilState.o.provides.build: CMakeFiles/pred
 
 
 CMakeFiles/pred.dir/state/GondolaAndPropState.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/state/GondolaAndPropState.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pred.dir/state/GondolaAndPropState.o"
+CMakeFiles/pred.dir/state/GondolaAndPropState.o: state/GondolaAndPropState.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pred.dir/state/GondolaAndPropState.o"
 	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/state/GondolaAndPropState.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/GondolaAndPropState.cc
 
 CMakeFiles/pred.dir/state/GondolaAndPropState.i: cmake_force
@@ -154,8 +154,8 @@ CMakeFiles/pred.dir/state/GondolaAndPropState.o.provides.build: CMakeFiles/pred.
 
 
 CMakeFiles/pred.dir/state/OptSourcePayloadState.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/state/OptSourcePayloadState.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pred.dir/state/OptSourcePayloadState.o"
+CMakeFiles/pred.dir/state/OptSourcePayloadState.o: state/OptSourcePayloadState.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pred.dir/state/OptSourcePayloadState.o"
 	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/state/OptSourcePayloadState.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/OptSourcePayloadState.cc
 
 CMakeFiles/pred.dir/state/OptSourcePayloadState.i: cmake_force
@@ -177,9 +177,33 @@ CMakeFiles/pred.dir/state/OptSourcePayloadState.o.provides: CMakeFiles/pred.dir/
 CMakeFiles/pred.dir/state/OptSourcePayloadState.o.provides.build: CMakeFiles/pred.dir/state/OptSourcePayloadState.o
 
 
+CMakeFiles/pred.dir/state/InitBalloonState.o: CMakeFiles/pred.dir/flags.make
+CMakeFiles/pred.dir/state/InitBalloonState.o: state/InitBalloonState.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pred.dir/state/InitBalloonState.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/state/InitBalloonState.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/InitBalloonState.cc
+
+CMakeFiles/pred.dir/state/InitBalloonState.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pred.dir/state/InitBalloonState.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/InitBalloonState.cc > CMakeFiles/pred.dir/state/InitBalloonState.i
+
+CMakeFiles/pred.dir/state/InitBalloonState.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pred.dir/state/InitBalloonState.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/state/InitBalloonState.cc -o CMakeFiles/pred.dir/state/InitBalloonState.s
+
+CMakeFiles/pred.dir/state/InitBalloonState.o.requires:
+
+.PHONY : CMakeFiles/pred.dir/state/InitBalloonState.o.requires
+
+CMakeFiles/pred.dir/state/InitBalloonState.o.provides: CMakeFiles/pred.dir/state/InitBalloonState.o.requires
+	$(MAKE) -f CMakeFiles/pred.dir/build.make CMakeFiles/pred.dir/state/InitBalloonState.o.provides.build
+.PHONY : CMakeFiles/pred.dir/state/InitBalloonState.o.provides
+
+CMakeFiles/pred.dir/state/InitBalloonState.o.provides.build: CMakeFiles/pred.dir/state/InitBalloonState.o
+
+
 CMakeFiles/pred.dir/util/ThrustCalcMethods.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/util/ThrustCalcMethods.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/ThrustCalcMethods.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pred.dir/util/ThrustCalcMethods.o"
+CMakeFiles/pred.dir/util/ThrustCalcMethods.o: util/ThrustCalcMethods.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pred.dir/util/ThrustCalcMethods.o"
 	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/util/ThrustCalcMethods.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/ThrustCalcMethods.cc
 
 CMakeFiles/pred.dir/util/ThrustCalcMethods.i: cmake_force
@@ -202,8 +226,8 @@ CMakeFiles/pred.dir/util/ThrustCalcMethods.o.provides.build: CMakeFiles/pred.dir
 
 
 CMakeFiles/pred.dir/util/DragCalcMethods.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/util/DragCalcMethods.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pred.dir/util/DragCalcMethods.o"
+CMakeFiles/pred.dir/util/DragCalcMethods.o: util/DragCalcMethods.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pred.dir/util/DragCalcMethods.o"
 	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pred.dir/util/DragCalcMethods.o -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/DragCalcMethods.cc
 
 CMakeFiles/pred.dir/util/DragCalcMethods.i: cmake_force
@@ -226,8 +250,8 @@ CMakeFiles/pred.dir/util/DragCalcMethods.o.provides.build: CMakeFiles/pred.dir/u
 
 
 CMakeFiles/pred.dir/util/gopt.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/util/gopt.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/pred.dir/util/gopt.o"
+CMakeFiles/pred.dir/util/gopt.o: util/gopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/pred.dir/util/gopt.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/util/gopt.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/gopt.c
 
 CMakeFiles/pred.dir/util/gopt.i: cmake_force
@@ -250,8 +274,8 @@ CMakeFiles/pred.dir/util/gopt.o.provides.build: CMakeFiles/pred.dir/util/gopt.o
 
 
 CMakeFiles/pred.dir/util/getdelim.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/util/getdelim.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/pred.dir/util/getdelim.o"
+CMakeFiles/pred.dir/util/getdelim.o: util/getdelim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/pred.dir/util/getdelim.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/util/getdelim.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getdelim.c
 
 CMakeFiles/pred.dir/util/getdelim.i: cmake_force
@@ -274,8 +298,8 @@ CMakeFiles/pred.dir/util/getdelim.o.provides.build: CMakeFiles/pred.dir/util/get
 
 
 CMakeFiles/pred.dir/util/getline.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/util/getline.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/pred.dir/util/getline.o"
+CMakeFiles/pred.dir/util/getline.o: util/getline.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/pred.dir/util/getline.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/util/getline.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/getline.c
 
 CMakeFiles/pred.dir/util/getline.i: cmake_force
@@ -298,8 +322,8 @@ CMakeFiles/pred.dir/util/getline.o.provides.build: CMakeFiles/pred.dir/util/getl
 
 
 CMakeFiles/pred.dir/util/random.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/util/random.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/pred.dir/util/random.o"
+CMakeFiles/pred.dir/util/random.o: util/random.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/pred.dir/util/random.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/util/random.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/util/random.c
 
 CMakeFiles/pred.dir/util/random.i: cmake_force
@@ -322,8 +346,8 @@ CMakeFiles/pred.dir/util/random.o.provides.build: CMakeFiles/pred.dir/util/rando
 
 
 CMakeFiles/pred.dir/wind/wind_file_cache.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/wind/wind_file_cache.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/pred.dir/wind/wind_file_cache.o"
+CMakeFiles/pred.dir/wind/wind_file_cache.o: wind/wind_file_cache.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/pred.dir/wind/wind_file_cache.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/wind/wind_file_cache.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file_cache.c
 
 CMakeFiles/pred.dir/wind/wind_file_cache.i: cmake_force
@@ -346,8 +370,8 @@ CMakeFiles/pred.dir/wind/wind_file_cache.o.provides.build: CMakeFiles/pred.dir/w
 
 
 CMakeFiles/pred.dir/wind/wind_file.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/wind/wind_file.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/pred.dir/wind/wind_file.o"
+CMakeFiles/pred.dir/wind/wind_file.o: wind/wind_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/pred.dir/wind/wind_file.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/wind/wind_file.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/wind/wind_file.c
 
 CMakeFiles/pred.dir/wind/wind_file.i: cmake_force
@@ -370,8 +394,8 @@ CMakeFiles/pred.dir/wind/wind_file.o.provides.build: CMakeFiles/pred.dir/wind/wi
 
 
 CMakeFiles/pred.dir/altitude.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/altitude.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/pred.dir/altitude.o"
+CMakeFiles/pred.dir/altitude.o: altitude.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/pred.dir/altitude.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/altitude.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/altitude.c
 
 CMakeFiles/pred.dir/altitude.i: cmake_force
@@ -394,8 +418,8 @@ CMakeFiles/pred.dir/altitude.o.provides.build: CMakeFiles/pred.dir/altitude.o
 
 
 CMakeFiles/pred.dir/pred.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/pred.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/pred.dir/pred.o"
+CMakeFiles/pred.dir/pred.o: pred.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/pred.dir/pred.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/pred.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/pred.c
 
 CMakeFiles/pred.dir/pred.i: cmake_force
@@ -418,8 +442,8 @@ CMakeFiles/pred.dir/pred.o.provides.build: CMakeFiles/pred.dir/pred.o
 
 
 CMakeFiles/pred.dir/run_model.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/run_model.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/pred.dir/run_model.o"
+CMakeFiles/pred.dir/run_model.o: run_model.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/pred.dir/run_model.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/run_model.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/run_model.c
 
 CMakeFiles/pred.dir/run_model.i: cmake_force
@@ -442,8 +466,8 @@ CMakeFiles/pred.dir/run_model.o.provides.build: CMakeFiles/pred.dir/run_model.o
 
 
 CMakeFiles/pred.dir/ini/iniparser.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/ini/iniparser.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/pred.dir/ini/iniparser.o"
+CMakeFiles/pred.dir/ini/iniparser.o: ini/iniparser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/pred.dir/ini/iniparser.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/ini/iniparser.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/iniparser.c
 
 CMakeFiles/pred.dir/ini/iniparser.i: cmake_force
@@ -466,8 +490,8 @@ CMakeFiles/pred.dir/ini/iniparser.o.provides.build: CMakeFiles/pred.dir/ini/inip
 
 
 CMakeFiles/pred.dir/ini/dictionary.o: CMakeFiles/pred.dir/flags.make
-CMakeFiles/pred.dir/ini/dictionary.o: /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/pred.dir/ini/dictionary.o"
+CMakeFiles/pred.dir/ini/dictionary.o: ini/dictionary.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/pred.dir/ini/dictionary.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pred.dir/ini/dictionary.o   -c /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/ini/dictionary.c
 
 CMakeFiles/pred.dir/ini/dictionary.i: cmake_force
@@ -496,6 +520,7 @@ pred_OBJECTS = \
 "CMakeFiles/pred.dir/state/BalloonAndPfoilState.o" \
 "CMakeFiles/pred.dir/state/GondolaAndPropState.o" \
 "CMakeFiles/pred.dir/state/OptSourcePayloadState.o" \
+"CMakeFiles/pred.dir/state/InitBalloonState.o" \
 "CMakeFiles/pred.dir/util/ThrustCalcMethods.o" \
 "CMakeFiles/pred.dir/util/DragCalcMethods.o" \
 "CMakeFiles/pred.dir/util/gopt.o" \
@@ -518,6 +543,7 @@ pred.exe: CMakeFiles/pred.dir/state/ExternalEnvironState.o
 pred.exe: CMakeFiles/pred.dir/state/BalloonAndPfoilState.o
 pred.exe: CMakeFiles/pred.dir/state/GondolaAndPropState.o
 pred.exe: CMakeFiles/pred.dir/state/OptSourcePayloadState.o
+pred.exe: CMakeFiles/pred.dir/state/InitBalloonState.o
 pred.exe: CMakeFiles/pred.dir/util/ThrustCalcMethods.o
 pred.exe: CMakeFiles/pred.dir/util/DragCalcMethods.o
 pred.exe: CMakeFiles/pred.dir/util/gopt.o
@@ -533,7 +559,7 @@ pred.exe: CMakeFiles/pred.dir/ini/iniparser.o
 pred.exe: CMakeFiles/pred.dir/ini/dictionary.o
 pred.exe: CMakeFiles/pred.dir/build.make
 pred.exe: CMakeFiles/pred.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable pred.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable pred.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pred.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -546,6 +572,7 @@ CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/state/ExternalEnvironState.o.r
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/state/BalloonAndPfoilState.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/state/GondolaAndPropState.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/state/OptSourcePayloadState.o.requires
+CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/state/InitBalloonState.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/util/ThrustCalcMethods.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/util/DragCalcMethods.o.requires
 CMakeFiles/pred.dir/requires: CMakeFiles/pred.dir/util/gopt.o.requires
@@ -567,6 +594,6 @@ CMakeFiles/pred.dir/clean:
 .PHONY : CMakeFiles/pred.dir/clean
 
 CMakeFiles/pred.dir/depend:
-	cd /cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSWithCUPredictorTest/pred_src/CMakeFiles/pred.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src /cygdrive/c/ampps/www/AIFCOMSSwithCUPredictorTest/pred_src/CMakeFiles/pred.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pred.dir/depend
 

@@ -49,7 +49,7 @@ ALTAIR_state::ALTAIR_state(   )
   : _externalEnvironState(  0 ),
     _balloonAndPfoilState(  0 ),
     _gondolaAndPropState(   0 ),
-    _optSourcePayloadState( 0 )
+    _optSourcePayloadState( 0 ),		_InitBalloonState(		0 )
 {
 }
 
@@ -87,7 +87,7 @@ ALTAIR_state::getOptSource(   )
   return _optSourcePayloadState;
 }
 
-
+InitBalloonState*ALTAIR_state::getInitBal(	){		return _InitBalloonState;	}
 void
 ALTAIR_state::setExtEnv(        ExternalEnvironState*  statePointer   )
 {
@@ -110,6 +110,6 @@ void
 ALTAIR_state::setOptSource(     OptSourcePayloadState* statePointer   )
 {
          _optSourcePayloadState =                      statePointer;
-}
+}voidALTAIR_state::setInitBal(		InitBalloonState*      statePointer	  ){			_InitBalloonState =							   statePointer;		}
 
 

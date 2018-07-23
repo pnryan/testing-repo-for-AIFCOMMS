@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pred.dir/state/BalloonAndPfoilState.o"
   "CMakeFiles/pred.dir/state/GondolaAndPropState.o"
   "CMakeFiles/pred.dir/state/OptSourcePayloadState.o"
+  "CMakeFiles/pred.dir/state/InitBalloonState.o"
   "CMakeFiles/pred.dir/util/ThrustCalcMethods.o"
   "CMakeFiles/pred.dir/util/DragCalcMethods.o"
   "CMakeFiles/pred.dir/util/gopt.o"

@@ -48,7 +48,7 @@
 //-------------------------------
 #include "../state/ALTAIR_state.hh"
 #include "../state/ExternalEnvironState.hh"
-#include "../state/GondolaAndPropState.hh"
+#include "../state/GondolaAndPropState.hh"//---------------------------------//Constant definitions ------------//---------------------------------#define 	mPerInch 	0.0254#define		airDensity	1.225
 
 
 //              ----------------------------------------
@@ -79,8 +79,8 @@ float ThrustCalcMethods::getInterpMethodThrust()
 //Thrust = C[a^2-(a*v_0)]*b^1.5
 //
 
-float ThrustCalcMethods::getMomTransMethodThrust() {	float thrustProp[4]; 		float d = altairState->getGondAndProp()->getPropellerDiameter();		float pitch = altairState->getGondAndProp()->getPropellerPitch();		float fVel = altairState->getExtEnv()->getForwardVelocityRelToWind();		float elevationASL = altairState->getExtEnv() ->getElevationASL();		float C = (1.225*M_PI)/(0.0254*d);		float b = d/(3.29546*pitch);		for (int i = 0; i < 4; ++i) {				float RPM = altairState->getGondAndProp()->getRPMMotor(i+1);				float newRPM = RPM/(1.395 + 0.3246*elevationASL + 0.05041*pow(elevationASL,2) + 0.006461*pow(elevationASL,3));				float a = (newRPM*0.0254*pitch)/60;				thrustProp[i] = C*(pow(a,2)-a*fVel)*pow(b,1.5);			}	
-	return (thrustProp[0]+thrustProp[1]+thrustProp[2]+thrustProp[3]);
+float ThrustCalcMethods::getMomTransMethodThrust() {	float thrustProp[4]; 		GondolaAndPropState* GondAndProp 	= altairState->getGondAndProp()								;		float d 							= GondAndProp->getPropellerDiameter()						;		float pitch 						= GondAndProp->getPropellerPitch()							;		float fVel 							= altairState->getExtEnv()->getForwardVelocityRelToWind()	;		float elevationASL 					= altairState->getExtEnv() ->getElevationASL()				;		float C 							= (airDensity*M_PI)/(mPerInch*d)							;		float b 							= d/(3.29546*pitch)											;		//Note: here 3.29546 is an emperically determined value. the method by which it is obtained is 		//outlined in the source given above this method. 		for (int i = 0; i < 4; ++i) {				float RPM 						= GondAndProp->getRPMMotor(i+1)								;				float newRPM 					= RPM/(1.395 + 0.3246*elevationASL + 0.05041*elevationASL*elevationASL +											0.006461*elevationASL*elevationASL*elevationASL)		;				float a							= (newRPM*mPerInch*pitch)/60								;											//here we divide by 60 simply as a conversion from RPM to RPS		thrustProp[i] 					= (C*a*a)-a*fVel*pow(b,1.5)									;			}	
+	return (thrustProp[0]+thrustProp[1]+thrustProp[2]+thrustProp[3])								;
 }
 
 
