@@ -16,7 +16,6 @@
 
 
 
-
     This is the class containing drag calculation methods to determine the
 
     magnitude (in Newtons) of the drag force acting on the ALTAIR
@@ -24,7 +23,8 @@
     payload at a current instant, in terms of variables such as: 1) ALTAIRS
 	
 	current elevationASL, 2) Initial Balloon state, pressure, volume, and temp
-
+	
+	3) Current temperature and density
 
 
     @section  HISTORY

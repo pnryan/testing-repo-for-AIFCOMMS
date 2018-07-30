@@ -23,6 +23,8 @@
     payload at a current instant, in terms of variables such as: 1) ALTAIRS
 	
 	current elevationASL, 2) Initial Balloon state, pressure, volume, and temp
+	
+	3) Current temperature and density
 
 
 
@@ -96,15 +98,15 @@ float DragCalcMethods::getBalloonDrag()
 	
 	float initState 				= initBal->getInitTemp()*initBal->getInitPressure()*initBal->getInitVolume();
 							
-	ExternalEnvironState* ExtEnv 	= altairState-> getExtEnv()													;
+	ExternalEnvironState* extEnv 	= altairState-> getExtEnv()													;
 	
-	float payloadVelocity			= ExtEnv-> getForwardVelocityRelToWind()									;
+	float payloadVelocity			= extEnv-> getForwardVelocityRelToWind()									;
 	
-	float temp			 			= ExtEnv-> getOutsideTemp() 												;
+	float temp			 			= extEnv-> getOutsideTemp() 												;
 	
-	float density					= ExtEnv-> getOutsideAirDensity()											;
+	float density					= extEnv-> getOutsideAirDensity()											;
 	
-	float elevationASL				= ExtEnv-> getElevationASL()												;
+	float elevationASL				= extEnv-> getElevationASL()												;
 	
 	
 	
@@ -134,7 +136,7 @@ float DragCalcMethods::getBalloonDrag()
 	
 	float viscosity 				= (1.458e-6*sqrt(temp))/(1+110.4/temp)										;
 
-	float rho_nu 					= density/viscosity															;
+	float densityOverViscosity 		= density/viscosity															;
 	
 	float balloonVolume 			= (temp/pressure)*initState  												;
 	
@@ -142,9 +144,10 @@ float DragCalcMethods::getBalloonDrag()
 	
 	float crossSecArea   			= M_PI*balloonRadius*balloonRadius     										;
 	
-	float Re			 			= rho_nu*payloadVelocity*2*balloonRadius									;
+	float reynoldsNumber 			= densityOverViscosity*payloadVelocity*2*balloonRadius						;
 	
-	float dragCoef       			= 24/Re + 2.6*(Re/5)/(1+pow((Re/5),1.52)) + 0.411*pow(Re/2.63e5,-7.94)/(1+pow(Re/2.63e5,-8)) + 0.25*(Re/1e6)/(1+(Re/1e6));
+	float dragCoef       			= 24/reynoldsNumber + 2.6*(reynoldsNumber/5)/(1+pow((reynoldsNumber/5),1.52)) + 0.411*pow(reynoldsNumber/2.63e5,-7.94)
+										/(1+pow(reynoldsNumber/2.63e5,-8)) + 0.25*(reynoldsNumber/1e6)/(1+(reynoldsNumber/1e6));
 							//This equation comes from curve fitting and is sourced from: http://pages.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2016.pdf
 
 	float drag 						= dragCoef*crossSecArea*density*payloadVelocity*payloadVelocity/2			;
@@ -158,7 +161,9 @@ float DragCalcMethods::getBalloonDrag()
 
 // Returns drag in Newtons affecting the ALTAIR payload. 
 
-// note that this function is essentially returning dummy values at this point as we have been unable to find
+// note that this function is returning dummy values that are likely way off depending on the current windspeed
+
+// density and other external variables at ALTAIRS current position. at this point as we have been unable to find
 
 // an effective model for determining the Drag Coefficient on a cuboid. This will need to be completely 
 

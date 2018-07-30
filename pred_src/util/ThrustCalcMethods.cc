@@ -48,7 +48,7 @@
 //-------------------------------
 #include "../state/ALTAIR_state.hh"
 #include "../state/ExternalEnvironState.hh"
-#include "../state/GondolaAndPropState.hh"//---------------------------------//Constant definitions ------------//---------------------------------#define 	mPerInch 	0.0254#define		airDensity	1.225
+#include "../state/GondolaAndPropState.hh"//---------------------------------//Constant definitions ------------//---------------------------------#define 	mPerInch 	0.0254
 
 
 //              ----------------------------------------
@@ -75,12 +75,12 @@ float ThrustCalcMethods::getInterpMethodThrust()
 
 //
 // Get the thrust using the momentum transfer method:
-//source: https://www.electricrcaircraftguy.com/2014/04/propeller-static-dynamic-thrust-equation-background.html// C = (1.225*\pi)/(0.0254*diameter)// RPM' = RPM/(1.395 + 0.3246*elevationASL + 0.05041*pow(elevationASL,2) + 0.006461*pow(elevationASL,3))		//note the method of obtaining this altitude correction is a little bit hand wavy		//and I am not incredibly sure about it... see source above. //a = (RPM'*0.0254*pitch)/60//b = diameter/(3.29546*pitch)		
-//Thrust = C[a^2-(a*v_0)]*b^1.5
-//
+//source: https://www.electricrcaircraftguy.com/2014/04/propeller-static-dynamic-thrust-equation-background.html// propXSectionAirmassPerMetre = (airDensity*\pi)/(mPerInch*diameter)//maxTheoSpeed = (rpm*mPerInch*pitch)/60//empCorrFactor = diameter/(3.29546*pitch)		
+//Thrust = propXSectionAirmassPerMetre*maxTheoSpeed*(maxTheoSpeed-fSpeed)*pow(empCorrFactor,1.5)
+//sum the thrust of all four propellers and returns the total. 
 
-float ThrustCalcMethods::getMomTransMethodThrust() {	float thrustProp[4]; 		GondolaAndPropState* GondAndProp 	= altairState->getGondAndProp()								;		float d 							= GondAndProp->getPropellerDiameter()						;		float pitch 						= GondAndProp->getPropellerPitch()							;		float fVel 							= altairState->getExtEnv()->getForwardVelocityRelToWind()	;		float elevationASL 					= altairState->getExtEnv() ->getElevationASL()				;		float C 							= (airDensity*M_PI)/(mPerInch*d)							;		float b 							= d/(3.29546*pitch)											;		//Note: here 3.29546 is an emperically determined value. the method by which it is obtained is 		//outlined in the source given above this method. 		for (int i = 0; i < 4; ++i) {				float RPM 						= GondAndProp->getRPMMotor(i+1)								;				float newRPM 					= RPM/(1.395 + 0.3246*elevationASL + 0.05041*elevationASL*elevationASL +											0.006461*elevationASL*elevationASL*elevationASL)		;				float a							= (newRPM*mPerInch*pitch)/60								;											//here we divide by 60 simply as a conversion from RPM to RPS		thrustProp[i] 					= (C*a*a)-a*fVel*pow(b,1.5)									;			}	
-	return (thrustProp[0]+thrustProp[1]+thrustProp[2]+thrustProp[3])								;
+float ThrustCalcMethods::getMomTransMethodThrust() {	float thrustProp[4]; 		GondolaAndPropState* gondAndProp 	= altairState->getGondAndProp()						;		ExternalEnvironState* extEnv		= altairState->getExtEnv()							;		float propDiam 						= gondAndProp->getPropellerDiameter()				;		float pitch 						= gondAndProp->getPropellerPitch()					;		float fSpeed 						= extEnv->getForwardVelocityRelToWind()				;		float elevationASL 					= extEnv->getElevationASL()							;		float airDensity					= extEnv->getOutsideAirDensity()					;		float propRadiusMeters				= mPerInch*propDiam/2								;		float propXSectionAirmassPerMetre	= airDensity*M_PI*propRadiusMeters*propRadiusMeters	;		float empCorrFactor 				= propDiam/(3.29546*pitch)							;		//Note: here 3.29546 is an emperically determined value. the method by which it is obtained is 		//outlined in the source given above this method. 		for (int i = 0; i < 4; ++i) {				float rpm						= gondAndProp->getRPMMotor(i+1)						;					float maxTheoSpeed				= (rpm*mPerInch*pitch)/60							;											//here we divide by 60 simply as a conversion from rpm to rps		thrustProp[i] 					= propXSectionAirmassPerMetre*maxTheoSpeed*(maxTheoSpeed-fSpeed)*pow(empCorrFactor,1.5);			}	
+	return (thrustProp[0]+thrustProp[1]+thrustProp[2]+thrustProp[3])						;
 }
 
 
